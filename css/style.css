@@ -408,15 +408,107 @@ header .navbar__links a {
     padding: 20px 26px 13px;
 }
 
+/* Aca comienza la pagina de descargas */
 
+.banner__download{
+    background: url('../assets/img/Download/downloadgame.png');
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.platform{
+    margin: 30px 0;
+}
 
+.download__section--game{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+}
 
+.download__section--active{
+    width: 750px;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+}
 
+.download__section--active a{
+    width: 300px;
+    text-align: center;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 30px;
+    right: 240px;
+    background-color: white;
+}
 
+.download__section--active a button{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
 
+.pcrequirements{
+    height: 374px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 40px;
+}
 
+.text__download{
+    padding: 3px;
+    margin-bottom: 30px;
+}
 
+.download__section--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.download__section{
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 20px 20px 0px;
+}
+
+.download__section img{
+    width: 450px;
+    height: 220px;
+}
+
+.download__section button{
+    position: absolute;
+    bottom: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    background-color: white;
+}
+
+.download__section button a{
+    text-decoration: none;
+    color: black;
+}
 
 
 
