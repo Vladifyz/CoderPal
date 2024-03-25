@@ -161,17 +161,17 @@ header .navbar__links a {
     transition: 0.3s ease .3s;
 }
 
-.main .content .topContent .btns__platform .steam:hover{
+.main .content .topContent .btns__platform .steam:hover {
     transform: scale(1.1);
     filter: invert();
 }
 
-.main .content .topContent .btns__platform .xboxXS:hover{
+.main .content .topContent .btns__platform .xboxXS:hover {
     transform: scale(1.1);
     filter: invert();
 }
 
-.main .content .topContent .btns__platform .xboxOne:hover{
+.main .content .topContent .btns__platform .xboxOne:hover {
     transform: scale(1.1);
     filter: invert();
 }
@@ -194,6 +194,7 @@ header .navbar__links a {
     display: flex;
     justify-content: center;
     gap: 35px;
+    flex-wrap: wrap;
 }
 
 
@@ -683,65 +684,95 @@ header .navbar__links a {
     top: 13px;
 }
 
+nav #toggle, nav label{
+    display: none;
+}
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+    .notice__section {
+        display: none;
+    }
 
-    /*Aca el inicio*/
+    .ntc-sections {
+        display: none;
+    }
+}
 
-    .header {
-        height: auto;
+@media (max-width: 425px) {
+    nav ul li a{
+        color: pink;
+    }
+
+    nav .navbar__links {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul {
         flex-direction: column;
         align-items: center;
-        padding: 10px 0;
+        padding: 2px 0;
     }
 
-    .header .logo {
-        margin-bottom: 20px;
+    nav label {
+        display: inline-flex;
+        cursor: pointer;
     }
 
-    .header .navbar {
-        margin-bottom: 20px;
+    nav #toggle:checked ~ .navbar__links{
+        height: 100%;
     }
 
-    .navbar__links {
-        flex-direction: column;
-        text-align: center;
+    .articlenotice{
+        width: 100px;
+        height: 400px;
+        position: relative;
     }
 
-    .navbar__links li {
-        padding: 10px 0;
+    .content-img img{
+        width: 400px;
+        margin: 20px 0 300px 10px;
     }
 
-    .btn button {
-        font-size: 14px;
-        padding: 8px 20px;
+    .content-list{
+        width: 450px;
+        height: 200px;
+        font-size: 10px;
+        position: absolute;
+        bottom: 1px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .articlenotice{
+        width: 100px;
+        height: 400px;
+        position: relative;
     }
 
-    .main .content .topContent .btns__platform {
-        gap: 20px;
-        margin-top: 10px;
+    .content-img img{
+        width: 350px;
+        margin: 20px 0 300px 10px;
     }
 
-    .main .content .noticeList .list {
-        flex-direction: column;
-        align-items: center;
+    .content-list{
+        width: 400px;
+        height: 220px;
+        font-size: 10px;
+        position: absolute;
+        bottom: 1px;
+    }
+
+    .list {
+        flex-wrap: wrap;
     }
 
     .home__notice a {
-        margin: 20px 0;
+        position: relative;
     }
 
-    .home__notice--t {
-        width: auto;
-        padding: 10px;
-        text-align: center;
-        margin-top: 10px;
-    }
-}
-
-/* Aca es el login del media xd*/
-
-@media (max-width: 375px) {
     .login {
         width: 90%;
         padding: 20px;
@@ -768,43 +799,40 @@ header .navbar__links a {
     .register {
         font-size: 12px;
     }
-}
 
-@media (max-width: 375px) {
-    .login {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .login h1 {
-        font-size: 28px;
-    }
-
-    .inputbox input {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    .remember {
-        font-size: 12px;
-    }
-
-    .login .login-btn {
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .register {
-        font-size: 12px;
+    .btn{
+        position: absolute;
+        right: 10px;
     }
 }
 
-@media (max-width: 425px) {}
+@media (max-width: 320px) {
 
-@media (max-width: 768px) {}
+    .articlenotice{
+        width: 100px;
+        height: 400px;
+        position: relative;
+    }
 
-@media (max-width: 1024px) {}
+    .content-img img{
+        width: 300px;
+        margin: 20px 0 300px 10px;
+    }
 
-@media (max-width: 400px) {}
+    .content-list{
+        width: 340px;
+        height: 220px;
+        font-size: 10px;
+        position: absolute;
+        bottom: 1px;
+    }
+    .btn{
+        display: none;
+    }
 
-@media (max-width: 400px) {}
+    .search{
+        position: absolute;
+        left: 0;
+        width: 150px;
+    }
+}
