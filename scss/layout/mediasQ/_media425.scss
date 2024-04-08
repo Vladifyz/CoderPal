@@ -1,0 +1,45 @@
+@media (max-width: 425px) {
+    .main .content {
+        display: none;
+    }
+
+    .btn button{
+        display: none;
+    }
+
+    .articlenotice{
+        img{
+            width: 220px;
+        }
+    }
+
+    .content-list{
+        h2, h3, p{
+            font-size: 10px;
+        }
+    }
+
+    .download__section img{
+        width: 380px;
+    }
+
+    .grid__container{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 200px);
+    }
+
+    .contact__us{
+        height: 200px;
+    }
+
+    .contact__us--text{
+        margin-top: 0;
+        h1{
+            font-size: 20px;
+            margin-left: 0;
+        }
+        p{
+            margin-left: 0;
+        }
+    }
+}

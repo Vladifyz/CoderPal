@@ -1,0 +1,63 @@
+@media (max-width: 375px){
+    .login {
+        width: 90%;
+        padding: 20px;
+        h1{
+            font-size: 28px;
+        }
+        .login-btn{
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .inputbox input {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .remember {
+        font-size: 12px;
+    }
+
+    .register {
+        font-size: 12px;
+    }
+
+    .btn{
+        position: absolute;
+        right: 10px;
+    }
+
+    /*Media CSS Index*/
+
+    .home__notice{
+        img{
+            width: 300px;
+        }
+    }
+
+    .download__section img{
+        width: 340px;
+    }
+
+    .contact__us{
+        height: 200px;
+    }
+
+    .contact__us--text{
+        margin-top: 0;
+        h1{
+            font-size: 20px;
+            margin-left: 0;
+        }
+        p{
+            margin-left: 0;
+            margin-top: 0;
+        }
+    }
+
+    .submit__btn{
+        left: 15px;
+    }
+}

@@ -1,0 +1,96 @@
+.support__container {
+    width: 100%;
+    height: 100px;
+    background: url('../../assets/support/support.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    h1{
+        margin-bottom: 30px;
+    }
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px 200px;
+    background-color: #F5D601;
+    div{
+        text-align: start;
+        padding: 30px 0 0 40px;
+        font-size: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.295);
+        position: relative;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            text-decoration: none;
+            color: black;
+            cursor: default;
+            position: absolute;
+            text-align: start;
+            font-size: 17px;
+            bottom: 45px;
+            padding-right: 40px;
+            font-weight: 400;
+        }
+    }
+}
+
+.contact__us {
+    width: 100%;
+    height: 300px;
+    background-color: #f1f5f0;
+    position: relative;
+}
+
+.contact__us--container {
+    width: 100%;
+    height: 300px;
+    text-align: start;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.contact__us--text {
+    margin-top: 80px;
+    h1{
+        font-size: 48px;
+        margin-left: 110px;
+    }
+    p{
+        text-align: start;
+        margin-left: 112px;
+        margin-top: 40px;
+        color: rgba(0, 0, 0, 0.753);
+    }
+}
+
+.submit__btn {
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+    position: absolute;
+    right: 80px;
+    top: 120px;
+    button{
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        &:hover{
+            background: #F5D601;
+            transform: scale(1.1);
+        }
+    }
+}

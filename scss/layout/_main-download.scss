@@ -1,0 +1,103 @@
+/*Main Download CSS*/
+
+.banner__download {
+    background: url('../../assets/download/downloadgame.png');
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.platform {
+    margin: 30px 0;
+}
+
+.download__section--game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    gap: 200px;
+}
+
+.download__section--steam, .download__section--xbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 650px;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    a{
+        position: absolute;
+        bottom: 30px;
+        button{
+            width: 300px;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+.pcrequirements {
+    height: 380px;
+    margin: 40px 0 40px;
+    div{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.text__download {
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.download__section--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.download__section {
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 20px 20px 0px;
+    img{
+        width: 450px;
+        height: 220px;
+    }
+    button{
+        position: absolute;
+        bottom: 10px;
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 2px;
+        background-color: white;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@media (max-width:768px) {
+    .main .content .topContent .btns__platform{
+        display: none;
+    }
+
+    .section-grid{
+        @include grid(repeat(3,1fr), repeat(2, 1fr),center,center,"area1 area1 area1""area2 area2 area2")
+    }
+
+    .support__container{
+        display: none;
+    }
+
+    .grid__container{
+        grid-template-columns: auto auto;
+        grid-template-rows: 200px 200px 200px;
+    }
+
+    .submit__btn{
+        right: -5px;
+    }
+}

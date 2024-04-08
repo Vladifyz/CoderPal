@@ -1,0 +1,59 @@
+header {
+    @include flex(row, space-between, center, 1.5625rem);
+    height: 70px;
+    padding: 1.25rem;
+    background-color: #F5D601;
+    .logo{
+      cursor: pointer;
+      img{
+        height: 40px;
+        width: auto;
+        transition: all 0.3s;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+    .nav--links{
+      list-style: none;
+      li{
+        display: inline-block;
+        padding: 0 5px;
+        margin: 0 15px;
+        transition: 0.3s;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      a{
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+        &:hover{
+          color: map-get($colores, hover);
+        }
+      }
+    }
+}
+
+.btn{
+  button{
+    background: #F5D601;
+    padding: 0.6em 1.3em;
+    font-weight: 700;
+    font-size: 16px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    &:hover{
+      transform: translate(-0.05em, -0.05em);
+      box-shadow: 0.15em 0.15em;
+    }
+    &:active{
+      transform: translate(0.05em, 0.05em);
+      box-shadow: 0.05em 0.05em;
+    }
+  }
+}
