@@ -14,6 +14,18 @@ header {
         }
       }
     }
+    nav .checkbtn{
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+    #check{
+      display: none;
+  }
     .nav--links{
       list-style: none;
       li{
@@ -38,7 +50,6 @@ header {
 }
 
 .btn{
-  button{
     background: #F5D601;
     padding: 0.6em 1.3em;
     font-weight: 700;
@@ -54,6 +65,5 @@ header {
     &:active{
       transform: translate(0.05em, 0.05em);
       box-shadow: 0.05em 0.05em;
-    }
   }
 }

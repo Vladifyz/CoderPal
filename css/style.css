@@ -36,6 +36,18 @@ header .logo img {
 header .logo img:hover {
   transform: scale(1.2);
 }
+header nav .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+header #check {
+  display: none;
+}
 header .nav--links {
   list-style: none;
 }
@@ -58,7 +70,7 @@ header .nav--links a:hover {
   color: white;
 }
 
-.btn button {
+.btn {
   background: #F5D601;
   padding: 0.6em 1.3em;
   font-weight: 700;
@@ -68,11 +80,11 @@ header .nav--links a:hover {
   box-shadow: 0.1em 0.1em;
   cursor: pointer;
 }
-.btn button:hover {
+.btn:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.15em 0.15em;
 }
-.btn button:active {
+.btn:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
 }
@@ -607,6 +619,38 @@ footer a {
     margin-bottom: 550px;
   }
 }
+@media (max-width: 952px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  header nav .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #F5D601;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 100;
+  }
+  header nav .nav--links li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
 @media (max-width: 768px) {
   .main .content .topContent .btns__platform {
     display: none;
@@ -628,6 +672,9 @@ footer a {
   }
   .submit__btn {
     right: -5px;
+  }
+  .board-header {
+    display: none;
   }
 }
 @media (max-width: 425px) {
@@ -686,13 +733,12 @@ footer a {
   .register {
     font-size: 12px;
   }
-  .btn {
-    position: absolute;
-    right: 10px;
-  }
   /*Media CSS Index*/
   .home__notice img {
     width: 300px;
+  }
+  .home__notice--t {
+    font-size: 12px;
   }
   .download__section img {
     width: 340px;

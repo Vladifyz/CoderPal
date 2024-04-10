@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palworld</title>
+    <meta name="description" content="Sumérgete en un mundo lleno de criaturas increíbles y paisajes impresionantes, donde la aventura y la estrategia se unen en una experiencia emocionante y única. En Palworld, los jugadores se embarcan en un viaje para convertirse en los mejores entrenadores de Pal, unas criaturas extraordinarias que habitan en este vasto universo.">
+    <meta name="keywords" content="pokemon, palworld, supervivencia, armas, mundo abierto, captura de criaturas, aventura">
+    <meta name="copyright" content="© 2024 Palworld Inc. Todos los derechos reservados.">
+    <meta name="robots" content="index, follow">
+    <title>Palworld | Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="assets/general/icoweb.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/621d779579.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,37 +23,41 @@
             </a>
         </div>
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+            </label>
             <ul class="nav--links">
                 <li><a href="#">Home</a></li>
                 <li><a href="./pages/news.html">News</a></li>
                 <li><a href="./pages/download.html">Download</a></li>
                 <li><a href="./pages/support.html">Support</a></li>
+                <li><a href="./pages/login.html" class="btn">Login</a></li>
             </ul>
         </nav>
-        <a href="./pages/login.html" class="btn"><button>Login</button></a>
     </header>
     <!---->
     <main>
         <div class="main">
             <section class="content">
                 <div class="background">
-                    <img src="./assets/home/background.webp">
+                    <img src="./assets/home/background.webp" alt="background palworld">
                 </div>
                 <div class="topContent">
                     <ul class="btns__platform">
                         <li class="steam">
                             <a href="./pages/download.html">
-                                <img src="./assets/home/img_steam.png">
+                                <img src="./assets/home/img_steam.png" alt="logo steam">
                             </a>
                         </li>
                         <li class="xboxXS">
                             <a href="./pages/download.html">
-                                <img src="./assets/home/img_xboxXS.png">
+                                <img src="./assets/home/img_xboxXS.png" alt="logo xbox">
                             </a>
                         </li>
                         <li class="xboxOne">
                             <a href="./pages/download.html">
-                                <img src="./assets/home/img_xboxOne.png">
+                                <img src="./assets/home/img_xboxOne.png" alt="logo xbox">
                             </a>
                         </li>
                     </ul>
@@ -60,7 +69,7 @@
                     <div class="list">
                         <article class="home__notice">
                             <a href="./pages/news.html">
-                                <img src="./assets/home/notice.png">
+                                <img src="./assets/home/notice.png" alt="noticia 1">
                                 <p class="home__notice--t">Total number of players exceeds 19 million <br><br>
                                     It's been less
                                     than
@@ -74,7 +83,7 @@
                         <!---->
                         <article class="home__notice">
                             <a href="./pages/news.html">
-                                <img src="./assets/home/notice2.png">
+                                <img src="./assets/home/notice2.png" alt="noticia2">
                                 <p class="home__notice--t">[Server Infrastructure Notice] <br><br> There will be
                                     some changes
                                     to the
@@ -86,7 +95,7 @@
                         <!---->
                         <article class="home__notice">
                             <a href="./pages/news.html">
-                                <img src="./assets/home/notice3.png">
+                                <img src="./assets/home/notice3.png" alt="noticia3">
                                 <p class="home__notice--t">Open world survival crafting game for up to 32 players
                                     <br><br>
                                     Adventure
