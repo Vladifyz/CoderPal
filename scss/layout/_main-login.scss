@@ -3,7 +3,7 @@
 .body__login{
     @include flex(none, center, center, none);
     min-height: 100vh;
-    background: url('../../assets/signin/background.png') no-repeat;
+    background: url('../assets/signin/background.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
